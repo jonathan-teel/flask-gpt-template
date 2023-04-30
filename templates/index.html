@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask-GPT-Template</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <label for="apiKey" class="form-label">OpenAI API Key</label>
+            <input type="password" class="form-control" id="apiKey" placeholder="Enter your OpenAI API key">
+            <label for="modelSelect" class="form-label">Select Model</label>
+            <select id="modelSelect" name="modelSelect" class="form-control">
+                <option value="gpt-3.5-turbo" selected>GPT-3.5</option>
+                <option value="gpt-4">GPT-4</option>
+            </select>
+            <label for="systemMsg">System Message</label>
+            <select id="systemMsg" name="systemMsg" class="form-select">
+                <option value="true" selected>Use System Message</option>
+                <option value="false">Do Not System Message</option>
+            </select>
+            <label for="query" class="form-label">Say Something:</label>
+            <textarea id="query" name="query" class="form-control" rows="4"></textarea>
+            <button type="button" id="runBtn" class="btn btn-primary">Run</button>
+        </div>
+
+        <div class="results-wrapper">
+            <div class="spinner" id="results-spinner"></div>
+
+            <div class="response-header">
+                <h2>Results</h2>
+            </div>
+            <p id="results"></p>
+               
+        </div>
+    </div> 
+</body>
+</html>
