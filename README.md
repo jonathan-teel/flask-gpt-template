@@ -26,4 +26,4 @@ Contributions are welcome, please feel free to submit a pull request or create a
 
 ## License
 
-GPT-Diver is released under the MIT License - see the LICENSE for details.
+Flask GPT Template is released under the MIT License - see the LICENSE for details.
